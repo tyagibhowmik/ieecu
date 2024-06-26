@@ -1,10 +1,10 @@
-/* General styles */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: white; /* Set default text color */
+    color: white; 
 }
 
 .logo {
@@ -43,7 +43,7 @@ body {
 }
 
 .nav-links a {
-    color: white; /* Set link text color */
+    color: white;
     text-decoration: none;
     padding: 0.5rem 1rem;
     transition: background-color 0.3s ease;
@@ -110,33 +110,33 @@ body {
 .mem {
     display: flex;
     justify-content: space-between;
-    background-color: rgb(25, 13, 119); /* Adjust background color */
+    background-color: rgb(25, 13, 119); 
 }
 
 table {
-    width: 50%; /* Adjust table width */
+    width: 50%; 
     margin: 20px auto;
     border-collapse: collapse;
 }
 
 th, td {
-    border: 1px solid white; /* Set border color to white */
-    padding: 12px; /* Adjust padding */
+    border: 1px solid white; 
+    padding: 12px; 
     text-align: left;
-    color: white; /* Set text color to white */
+    color: white; 
 }
 
 th {
-    background-color: transparent; /* Set background color of header cells to transparent */
+    background-color: transparent; 
 }
 
-/* Hover effect for images */
+
 .mem img {
     transition: transform 0.3s ease;
 }
 
 .mem img:hover {
-    transform: rotate(10deg); /* Scale up slightly on hover */
+    transform: rotate(10deg); 
 }
 
 .footer {
@@ -154,7 +154,7 @@ th {
 }
 body {
     margin: 0;
-    padding-bottom: 50px; /* Adjust this value based on footer height */
+    padding-bottom: 50px;
     min-height: 100vh;
     position: relative;
     box-sizing: border-box;
