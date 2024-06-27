@@ -1,8 +1,7 @@
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
+    padding-top: 0;
     box-sizing: border-box;
     color: white; 
 }
@@ -14,12 +13,13 @@ body {
 
 .navbar {
     width: 100%;
+    height: 90px;
     padding: 1rem 2rem;
-    background-color: transparent;
-    position: fixed;
+    background-color: transparent; 
+    position: fixed; 
     top: 0;
     z-index: 1000;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    
 }
 
 .navbar-container {
@@ -29,6 +29,7 @@ body {
 }
 
 .nav-links {
+    font-size: px;
     list-style: none;
     display: flex;
     gap: 1rem;
@@ -39,19 +40,46 @@ body {
 }
 
 .nav-links li {
-    display: inline;
+    position: relative; 
 }
 
 .nav-links a {
-    color: white;
-    text-decoration: none;
+    color: rgb(19, 21, 128);
+    text-decoration:none;
     padding: 0.5rem 1rem;
     transition: background-color 0.3s ease;
 }
 
 .nav-links a:hover {
-    background-color: #575757;
+    background-color: #e4d180;
     border-radius: 5px;
+}
+
+
+.nav-links li:hover .dropdown {
+    display: block; 
+}
+
+.dropdown {
+    display: none;
+    position: absolute; 
+    top: 100%; 
+    left: 0;
+    background-color: rgba(51, 51, 51, 0.9); 
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    min-width: 200px; 
+}
+
+.dropdown a {
+    color: white; 
+    padding: 10px 20px;
+    display: block;
+    white-space: nowrap;
+}
+
+.dropdown a:hover {
+    background-color: rgba(87, 87, 87, 0.8);
 }
 
 .hero-section {
@@ -61,14 +89,13 @@ body {
 
 .hero-image {
     width: 100%;
-    height:90vh;
+    height: 90vh;
     object-fit: cover;
 }
 
 body {
-    padding-top: 0;
+    padding-top: 100px; 
 }
-
 
 .navbar.scrolled {
     background-color: #fff;
@@ -78,7 +105,6 @@ body {
 .navbar.scrolled .nav-links a {
     color: #333;
 }
-
 
 .about-us {
     text-align: center;
@@ -114,22 +140,26 @@ body {
 }
 
 table {
-    width: 50%; 
+    width: 50%;
     margin: 20px auto;
     border-collapse: collapse;
+    background-color: #333;
+    color: white;
+    border-radius: 8px;
+    overflow: hidden;
 }
 
 th, td {
-    border: 1px solid white; 
-    padding: 12px; 
+    padding: 12px 15px;
     text-align: left;
-    color: white; 
+    border-bottom: 1px solid #555;
 }
 
 th {
-    background-color: transparent; 
+    background-color: #444;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
 }
-
 
 .mem img {
     transition: transform 0.3s ease;
@@ -140,18 +170,29 @@ th {
 }
 
 .footer {
-    background-color: #333;
+    background-color: #222;
     color: white;
     padding: 2rem 0;
     text-align: center;
-    position: absolute;
-    bottom: 0;
     width: 100%;
+    position: relative;
+    bottom: 0;
 }
 
 .footer p {
-    margin: 0;
+    margin: 0.5rem 0;
 }
+
+.footer a {
+    color: #e4d180;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #fff;
+}
+
 body {
     margin: 0;
     padding-bottom: 50px;
